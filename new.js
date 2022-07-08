@@ -1,26 +1,32 @@
-function sort(){
-	
-	var a = document.getElementById('T1').value;
-	var b = document.getElementById('T2').value;
-	console.log(a.length);
-	if(a.length > b.length ){
-		document.getElementById('T1').value = b;
-        document.getElementById('T2').value = a;
-}    
+function abc(){
+	var a= document.getElementById('T1').value;
+	document.getElementById("s1").textContent=a;
 }
-function descending(){
-	var c = document.getElementById('T1').value;
-	var d = document.getElementById('T2').value;
-	console.log(d.length);
-	if(c.length < d.length){
-		document.getElementById('T1').value = d;
-	    document.getElementById('T2').value = c;
+function f2(){
+	var x='Apple';
+	x=x + 'Banana';
+	x=x + 'Oranage';
+	document.getElementById('s1').textContent=x;
+}
+function f3(){
+	var a=2;
+	a=a+3;
+	a++;
+	a=a+2;
+	a=a+'is my lucky number';
+	document.getElementById('s1').textContent=a;
+}
+function f4(){
+	var a=0;
+	var t='Suraj';
+	var c=document.getElementById('T1').value;
+	var d=document.getElementById('T2').value;
+	
+	for(a=1; a<=d; a++){
+		t=t+'<br>' + c +  ' ' + ' x ' + a + '=' + (c * a);
 		
 	}
-	
-	
-	
+	document.getElementById('s1').innerHTML=t;
+	console.log(t);
+
 }
-	
-	
-	  
